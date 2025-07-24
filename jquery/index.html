@@ -15,8 +15,7 @@
 
     <ul id="destinasi">
       <li></li>
-      <li></li>
-      <li></li>
+      <li class="surabaya"></li>
       <li></li>
       <li></li>
     </ul>
@@ -33,16 +32,27 @@
       .children
       .find
       .parent
+
+
       */
       $("li").prev().next().prev();
-
       $("li").first().parent();
-
       $("h1").text("Ukhasyah");
-      $("#destinasi li:first").text("Ukhasyah");
-      $("#destinasi li:last").text("Fauzan");
-      $("#destinasi li:odd").text("Ukhasyah");
-      $("#destinasi li:last").odd("Fauzan");
+
+      $("#destinasi tag:first").text("Ukhasyah");
+      $("#destinasi tag:last").text("Fauzan");
+      $("#destinasi tag:odd").text("Ukhasyah");
+      $("#destinasi tag:last").odd("Fauzan");
+
+      var jogja = $("<li>Jogja</li>");
+      var bangka = $("<li>Bangka</li>");
+      var ask = $("<h2>Pilih Tujuan</h2>");
+      $("#destinasi").prepend(jogja);
+      $("#destinasi").append(bangka);
+      $("#destinasi").before(ask);
+      <!-- $("#destinasi").empty(); -->
+      $('.surabaya').text('Surabaya')
+      
     </script>
   </body>
 </html>
