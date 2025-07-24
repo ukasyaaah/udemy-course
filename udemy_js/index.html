@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Hlo</h1>
+
+    <ul id="destinasi">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script>
+      /**
+      Selector - Traversing
+      .first
+      .last
+
+      .prev
+      .next
+
+      .children
+      .find
+      .parent
+      */
+      $("li").prev().next().prev();
+
+      $("li").first().parent();
+
+      $("h1").text("Ukhasyah");
+      $("#destinasi li:first").text("Ukhasyah");
+      $("#destinasi li:last").text("Fauzan");
+      $("#destinasi li:odd").text("Ukhasyah");
+      $("#destinasi li:last").odd("Fauzan");
+    </script>
+  </body>
+</html>
